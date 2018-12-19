@@ -2,25 +2,21 @@ $(document).ready(function() {
 
 	var checkComment = (function(){
 
-		// Переменные модуля
+		// Переменные формы и ошибки
 		var _form = $('.comment-add-block');
 		var _error = $('.notify-hide');
 
-		// Метод инициализации (запуска) модуля
 		var init = function(){
-			_setUpListeners(); // Запускаем прослушку событий
+			_setUpListeners();
 		}
 
-		// Метод прослушки событий
-		// В нем прослушиваем события на странице, например клики по кнопкам, и при срабатывании события запускаем нужный метод нашего модуля
 		var _setUpListeners = function(){
 			_form.on('submit', function(event){
-				_formValidate(event);
+				_textareaValidate(event);
 			});
 		}
 
-		// Приватные методы
-		var _formValidate = function (event) {
+		var _textareaValidate = function (event) {
     		event.preventDefault();
 			console.log('private method _formValidate() is run');
 
