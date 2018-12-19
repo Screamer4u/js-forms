@@ -1342,6 +1342,10 @@ fieldset {
 	color: #38505e;
 }
 
+.notify-hide {
+	display: none;
+}
+
 .notify--success {
 	background-image: -webkit-linear-gradient(90deg, #08711c 0%, #2cb951 100%);
 	background-image: -ms-linear-gradient(90deg, #08711c 0%, #2cb951 100%);
