@@ -1323,6 +1323,10 @@ fieldset {
 	display: none;
 }
 
+.email-and-password-error, .error-email-hide, .format-email-hide, .error-password-hide {
+	display: none;
+}
+
 .notify {
 	font-family: 'Open sans';
 	font-size: 16px;

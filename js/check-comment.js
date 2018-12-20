@@ -17,7 +17,6 @@ $(document).ready(function() {
 		}
 
 		var _textareaValidate = function (event) {
-    		event.preventDefault();
 			console.log('private method _formValidate() is run');
 
 			var form = _form,
@@ -31,9 +30,10 @@ $(document).ready(function() {
 
 				if (value.length === 0){
 					_error.fadeIn();
+					event.preventDefault();
 				} else {
 					_error.fadeOut();
-					form.unbind('submit').submit();
+					//form.unbind('submit').submit();
 				}
 			});
 
