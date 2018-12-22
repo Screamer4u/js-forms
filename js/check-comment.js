@@ -31,15 +31,13 @@ $(document).ready(function() {
 				console.log('value = ' + value);
 
 				if (value.length === 0){
-					fadeInError = _error.removeClass(_error);
-					fadeInError.fadeIn();
+					fadeInError = _error.removeClass(_error).fadeIn();;
 					event.preventDefault();
 				}
 			});
 
 			textarea.on('keydown', function(){
-				fadeInError = _error.addClass(_error);
-				fadeInError.fadeOut();
+				fadeInError = _error.addClass(_error).fadeOut();
 			});
 		}
 
