@@ -1334,6 +1334,10 @@ fieldset {
 	background-color: #e0e9ee;
 }
 
+.notify-hide {
+	display: none;
+}
+
 .notify p {
 	line-height: 24px;
 }
