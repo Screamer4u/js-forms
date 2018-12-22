@@ -47,7 +47,6 @@ $(document).ready(function() {
 					blockNameAfter.css({'margin-bottom':'15px'});
 					fadeInFor.fadeIn(600);
 					blockName.removeClass(_emptyEmail);
-					_emailErrorBlock.removeClass(remClass);
 				}
 
 				if (emailVal.length === 0 || passwordVal.length === 0) {
