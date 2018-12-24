@@ -40,7 +40,7 @@ $(document).ready(function() {
 				if (emailVal.length === 0 || passwordVal.length === 0) {
 					if (emailVal.length === 0) {
 						event.preventDefault();
-						_emailPasswordWrongBlock.fadeOut(0);
+						_emailPasswordWrongBlock.fadeOut(400);
 						_emailErrorBlock.css('margin-top', '5px').fadeIn(600);
 					}
 
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
 					if (!(pattern.test(emailVal))) {
 						event.preventDefault();
-						_emailPasswordWrongBlock.fadeOut(0);
+						_emailPasswordWrongBlock.fadeOut(400);
 						_wrongEmailFormatBlock.css('margin-top', '5px').fadeIn(600);
 						console.log('Email is INVALID!');
 					} else if (pattern.test(emailVal) && emailVal != _email && passwordVal == _password) {
