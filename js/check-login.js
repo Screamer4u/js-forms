@@ -41,20 +41,20 @@ $(document).ready(function() {
 					if (emailVal.length === 0) {
 						event.preventDefault();
 						_emailPasswordWrongBlock.fadeOut(0);
-						_emailErrorBlock.fadeIn(600);
+						_emailErrorBlock.css('margin-top', '5px').fadeIn(600);
 					}
 
 					if (passwordVal.length === 0) {
 						event.preventDefault();
 						_emailPasswordWrongBlock.fadeOut(0);
-						_passwordErrorBlock.fadeIn(600);
+						_passwordErrorBlock.css('margin-top', '5px').fadeIn(600);
 					}
 				} else {
 
 					if (!(pattern.test(emailVal))) {
 						event.preventDefault();
 						_emailPasswordWrongBlock.fadeOut(0);
-						_wrongEmailFormatBlock.fadeIn(600);
+						_wrongEmailFormatBlock.css('margin-top', '5px').fadeIn(600);
 						console.log('Email is INVALID!');
 					} else if (pattern.test(emailVal) && emailVal != _email && passwordVal == _password) {
 						event.preventDefault();
@@ -74,12 +74,18 @@ $(document).ready(function() {
 				}
 
 				_emailInput.on('focus', function(){
-					_emailErrorBlock.fadeOut(600);
-					_wrongEmailFormatBlock.fadeOut(600);
+					_emailErrorBlock.fadeOut(600, function(){
+						_emailErrorBlock.css('margin-top', '0px');
+					});
+					_wrongEmailFormatBlock.fadeOut(600, function(){
+						_wrongEmailFormatBlock.css('margin-top', '0px');
+					});
 				});
 
 				_passwordInput.on('focus', function(){
-					_passwordErrorBlock.fadeOut(600);
+					_passwordErrorBlock.fadeOut(600, function(){
+						_passwordErrorBlock.css('margin-top', '0px');
+					});
 				});
 
 
