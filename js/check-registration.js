@@ -21,11 +21,11 @@ $(document).ready(function() {
 		//Прослушка события по submit
 		var _setUpListeners = function(){
 			_registrationForm.on('submit', function(event){
-				_loginValidate(event);
+				_registrationValidate(event);
 			});
 		}
 
-		var _loginValidate = function (event) {
+		var _registrationValidate = function (event) {
 			console.log('private method _loginValidate() is run');
 
 			var form = _registrationForm,
