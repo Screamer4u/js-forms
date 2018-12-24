@@ -1334,6 +1334,13 @@ fieldset {
 	background-color: #e0e9ee;
 }
 
+.empty-email-reg,
+.wrong-email-reg,
+.empty-password-reg,
+.email-busy-reg {
+	display: none;
+}
+
 .notify p {
 	line-height: 24px;
 }
