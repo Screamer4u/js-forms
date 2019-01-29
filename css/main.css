@@ -1341,7 +1341,11 @@ fieldset {
 	background-color: #e0e9ee;
 }
 
-.notify-hide {
+.empty-email-reg,
+.wrong-email-reg,
+.empty-password-reg,
+.email-busy-reg {
+ {
 	display: none;
 }
 
